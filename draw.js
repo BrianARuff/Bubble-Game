@@ -1,7 +1,11 @@
 var bubbles = [];
 
 function setup() {
-  createCanvas(600,400);
+  if (windowWidth > 796 && windowHeight > 900) {
+    createCanvas(windowWidth-15, windowHeight);
+  } else {
+    createCanvas(windowWidth-15, windowHeight);
+  }
 }
 
 function mouseDragged() {
